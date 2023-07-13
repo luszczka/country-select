@@ -1,0 +1,18 @@
+.container {
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.react-aria-ModalOverlay {
+  align-items: center;
+  background: rgba(0 0 0 / 0.2);
+  display: flex;
+  height: var(--visual-viewport-height);
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}

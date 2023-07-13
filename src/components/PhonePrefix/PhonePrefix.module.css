@@ -1,0 +1,88 @@
+.popover {
+  border: 1px solid #e4e4eb;
+  border-radius: 6px;
+
+  width: 250px;
+}
+
+.loader {
+  align-items: center;
+  border: 1px solid #c7c9d9;
+  border-radius: 6px;
+  color: #555770;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  padding: 0 8px;
+  width: 106px;
+}
+
+.dot {
+  animation: dot-flashing 0.75s infinite linear alternate;
+  animation-delay: 0.25s;
+  background-color: #c7c9d9;
+  border-radius: 5px;
+  height: 7px;
+  position: relative;
+  width: 7px;
+
+  &::before {
+    animation: dot-flashing 0.75s infinite alternate;
+    animation-delay: 5s;
+    left: 10px;
+  }
+
+  &::after {
+    animation: dot-flashing 0.75s infinite alternate;
+    animation-delay: 0;
+    right: 10px;
+  }
+}
+
+.dot::before,
+.dot::after {
+  background-color: #c7c9d9;
+  border-radius: 5px;
+  content: "";
+  display: block;
+  height: 7px;
+  position: absolute;
+  width: 7px;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #5870e0;
+  }
+  50%,
+  100% {
+    background-color: #c7c9d9;
+  }
+}
+
+.button {
+  background-color: #fff;
+  border: 1px solid #c7c9d9;
+  border-radius: 6px;
+  color: #555770;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 8px;
+  width: 106px;
+
+  &[data-pressed="true"] {
+    outline: 1px solid #5870e0;
+  }
+}
+
+.button svg {
+  transform: rotate(180deg);
+  transition: transform 0.4s;
+}
+
+.button[data-pressed="true"] svg {
+  transform: rotate(0deg);
+  transition: transform 0.4s;
+}

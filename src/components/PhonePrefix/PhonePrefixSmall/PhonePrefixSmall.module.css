@@ -1,0 +1,13 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flag {
+  font-size: 24px;
+}
+
+.icon svg {
+  color: #fff;
+}

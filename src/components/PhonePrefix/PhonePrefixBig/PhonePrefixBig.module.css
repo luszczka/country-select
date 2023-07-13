@@ -1,0 +1,31 @@
+.wrapper {
+  all: unset;
+  align-items: center;
+  color: #555770;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: space-between;
+  padding: 8px 24px 8px 12px;
+  width: calc(100% - 36px);
+
+  &:hover {
+    background-color: #e4e4eb;
+    border-radius: 6px;
+  }
+}
+
+.countryContainer {
+  align-items: center;
+  display: flex;
+}
+
+.flag {
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.dialCode {
+  font-weight: 600;
+}
